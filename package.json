@@ -1,12 +1,16 @@
 {
     "name": "@jjdenhertog/music-search",
-    "version": "1.0.3",
-    "description": "Search for music",
+    "version": "1.0.5",
+    "description": "Library to find tracks in a music library.",
+    "keywords": [
+        "search",
+        "music"
+    ],
     "homepage": "https://github.com/jjdenhertog/music-search",
     "main": "dist/index.js",
     "license": "MIT",
     "scripts": {
-        "deploy": "tsc && npm version patch --no-git-tag-version && cp package.json ./dist && cd dist && npm publish --access public",
+        "deploy": "tsc && npm version patch --no-git-tag-version && cp package.json ./dist && cp README.md ./dist && cd dist && npm publish --access public",
         "build": "tsc"
     },
     "engines": {
