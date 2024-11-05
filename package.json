@@ -1,6 +1,6 @@
 {
     "name": "@jjdenhertog/music-search",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Search for music",
     "homepage": "https://github.com/jjdenhertog/music-search",
     "main": "dist/index.js",
