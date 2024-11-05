@@ -26,7 +26,7 @@ export default class MusicSearch {
     }
 
     public get config() {
-        return this._config || {}
+        return this._config ?? {}
     }
 
     public search(find: Track, options: Track[], includeMatching: boolean = false): Track[] {
