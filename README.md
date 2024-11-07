@@ -1,9 +1,7 @@
 
 # Music Search
 
-[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/jjdenhertog)
-
-The `music-search` library offers powerful tools for searching and filtering music tracks by title, artist, and album. With flexible configuration options and advanced matching criteria, it’s built to seamlessly handle music collections across different platforms.
+The `music-search` library can be used for searching and filtering music tracks by title, artist, and album. This search library is platform independent, so you can feed it with tracks from any API and than use it to match your query. It was originally build to match Spotify tracks with Plex and Tidal tracks. 
 
 This library is used by [plex-music-search](https://github.com/jjdenhertog/plex-music-search) and [tidal-music-search](https://github.com/jjdenhertog/tidal-music-search)
 
@@ -65,7 +63,7 @@ If you do not need the id for this purpose, you can simply leave it empty: `{ id
 
 The `music-search` library comes with a set of default configurations, so you can use it right away without any setup. Here’s a breakdown of each default option:
 
-- **filterOutWords**: By default, the library filters out certain common words and phrases often found in music titles that don’t contribute to unique identification. These include:
+- **filterOutWords**: filters out certain common words and phrases often found in music titles that don’t contribute to unique identification. These include:
   - "original mix"
   - "radio edit"
   - "single edit"
@@ -76,7 +74,7 @@ The `music-search` library comes with a set of default configurations, so you ca
   - "retail mix"
   - "quartet"
 
-- **filterOutQuotes**: The library removes certain types of quotes from track titles to standardize search strings. The default quotes filtered out are:
+- **filterOutQuotes**: removes certain types of quotes from track titles to standardize search strings.
 - **cutOffSeparators**: This option cuts off track titles at specific separators often used to append extra information (like versions or remixes). By default, these separators include:
   - `(`
   - `[`
@@ -117,7 +115,7 @@ musicSearch.config = {
 
 1. **Basic Search**
 
-   Find tracks based on ID, title, album, and artist:
+   Find tracks based on title, album, and artist:
 
    ```typescript
    const result = musicSearch.search({ id, title, album, artist }, tracks);
@@ -131,10 +129,10 @@ musicSearch.config = {
    const result = musicSearch.search({ id, title, artist }, tracks, true);
    ```
 
-## Support
+## Support This Open-Source Project ❤️
 
-If this project helps you, consider supporting me:
+If you appreciate my work, consider starring this repository or making a donation to support ongoing development. Your support means the world to me—thank you!
 
 [![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/jjdenhertog)
 
-Your support helps improve and maintain this library.
+Are you a developer and have some free time on your hand? It would be great if someone can help me maintain and improve this library.
