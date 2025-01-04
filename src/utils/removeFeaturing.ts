@@ -1,7 +1,6 @@
 
 
-export function removeFeaturing(artist: string) {
-    let result = artist;
+export function removeFeaturing(result = "") {
     if (result.indexOf('feat') > -1)
         result = result.slice(0, Math.max(0, result.indexOf('feat')));
 

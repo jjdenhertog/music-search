@@ -4,7 +4,7 @@ export function filterOutWords(input: string, filtered: boolean = false, cutOffS
 
     // Get the config for word filtering
     const musicSearch = MusicSearch.getInstance();
-    const config = musicSearch.config;
+    const { config } = musicSearch;
 
     let result = input.toLowerCase();
     const {
@@ -26,7 +26,7 @@ export function filterOutWords(input: string, filtered: boolean = false, cutOffS
             "(",
             "[",
             "{",
-            "-",
+            "-"
         ]
     } = config;
     if (filtered)
