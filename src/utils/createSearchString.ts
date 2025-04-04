@@ -14,7 +14,6 @@ export function createSearchString(input: string) {
         .replace(new RegExp(/œ/g), "oe")
         .replace(new RegExp(/[ùúûü]/g), "u")
         .replace(new RegExp(/[ýÿ]/g), "y")
-        .replace(new RegExp(/[^\da-z]/gi), '')
         .trim();
 
     return result;

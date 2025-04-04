@@ -1,6 +1,6 @@
 {
     "name": "@jjdenhertog/music-search",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Library to find tracks in a music library.",
     "keywords": [
         "search",
